@@ -1,3 +1,5 @@
+import Timer from "./Timer";
+
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center font-sans">
@@ -7,7 +9,10 @@ export default function Home() {
             </div>
             <div className="p-2">
                 <p className="w-0 min-w-full leading-snug">The ACPC Spring 2026 contest page is still under development.</p>
-                <p>Countdown here</p>
+            </div>
+            <div className="w-fit p-2 mx-2 mb-2 rounded-lg flex flex-col">
+                <p className="uppercase font-semibold text-sm opacity-60 mb-[-4]">Contest starts in:</p>
+                <p className="text-lg font-semibold"><Timer date={new Date("2026-04-19T13:00:00-05:00")} /></p>
             </div>
         </div>
 
