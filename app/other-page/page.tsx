@@ -1,9 +1,14 @@
+import Image from "next/image";
+import localFont from "next/font/local";
+
+const minecraft = localFont({ src: "../../public/Minecraft.otf" });
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center font-sans">
-        <div className="pl-1 pr-1 flex flex-row items-center justify-between align-middle h-24 bg-[repeating-linear-gradient(45deg,#efefef_0_20px,#f5f5f5_20px_40px)] dark:bg-[repeating-linear-gradient(45deg,#090909_0_20px,#161616_20px_40px)]">
-
+    <div className="flex flex-col flex-1 font-sans">
+        <div>
+            <Image src={"/acpc s26 splash.svg"} className="w-full" alt={"ACPC Spring 2026"} width={1200} height={1200}></Image>
+            <p className={`${minecraft.className} absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 text-2xl font-semibold text-center`}>TEST</p>
         </div>
     </div>
   );
