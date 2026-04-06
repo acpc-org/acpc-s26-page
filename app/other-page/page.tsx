@@ -75,17 +75,59 @@ export default function Home() {
                     <Image src={"/lower rocks.svg"} className="w-full h-auto" alt={"Rocks"} width={600} height={600}></Image>
                     <div className="absolute inset-0 items-center justify-center flex flex-col">
                         <p className="text-white text-lg md:text-4xl text-center leading-snug font-semibold">Contest Overview</p>
-                        <ul>
-                            <li className="text-white text-xs md:text-lg text-center leading-snug font-semibold mt-2">
-                                Prizes
+                        <ul className="">
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Over <span className="text-green-500 font-bold">$2,000</span> in prizes
                             </li>
-                            <li className="text-white text-xs md:text-lg text-center leading-snug font-semibold mt-2">
-                                Prizes
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Problems for absolute beginners & seasoned experts
+                            </li>
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                40+ programming languages allowed
+                            </li>
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Open-internet (content must be published before contest start)
+                            </li>
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Lots of free pizza & snacks
                             </li>
                         </ul>
                     </div>
                 </div>
                 <Image src={"/cave 2.svg"} className="max-w-[48%] h-auto" alt={"Cave"} width={600} height={600}></Image>
+            </div>
+        </div>
+        <div className="relative w-full overflow-hidden flex items-start justify-center">
+            <Image src={"/screen 4.svg"} className="w-full h-auto object-cover" alt={"Nether background"} width={1200} height={1200}></Image>
+        </div>
+        <div className="bg-[#390C0C] flex flex-col mt-[-64]">
+            <div className="relative ml-8 mr-8 flex flex-row align-top justify-start">
+                {/* The image takes up 48% of the width */}
+                <Image src={"/nether 1.svg"} className="w-[48%] h-auto relative z-10" alt={"Cave"} width={600} height={600}></Image>
+                
+                {/* The text content starts exactly halfway across the image */}
+                <div className="absolute right-[10%] flex items-center justify-center z-20 bg-[#50000080] backdrop-blur-sm">
+                    <div className="flex flex-col items-center justify-center">
+                        <p className="text-white text-lg md:text-4xl text-center leading-snug font-semibold">Schedule</p>
+                        <ul className="">
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Over <span className="text-green-500 font-bold">$2,000</span> in prizes
+                            </li>
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Problems for absolute beginners & seasoned experts
+                            </li>
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                40+ programming languages allowed
+                            </li>
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Open-internet (content must be published before contest start)
+                            </li>
+                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
+                                Lots of free pizza & snacks
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
