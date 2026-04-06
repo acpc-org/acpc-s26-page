@@ -113,9 +113,9 @@ export default function Home() {
                             <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">12:00pm - 1:00pm</p>
                             <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Check-In / Pre-Contest</p>
                         </div>
-                        <div className="bg-[#B0000080] flex flex-row justify-between gap-8 w-full">
+                        <div className="bg-[#B0000080] flex flex-row justify-between items-center gap-8 w-full">
                             <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">1:00pm - 6:00pm</p>
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Contest</p>
+                            <p className="text-white text-md md:text-5xl text-center leading-none font-semibold">Contest</p>
                         </div>
                         <div className="bg-[#A0000040] flex flex-row justify-between gap-8 w-full">
                             <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:00pm - 6:15pm</p>
