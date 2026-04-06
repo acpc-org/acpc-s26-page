@@ -109,25 +109,27 @@ export default function Home() {
                 <div className="absolute right-[10%] flex items-center justify-center z-20 bg-[#90000030] backdrop-blur-xs">
                     <div className="flex flex-col items-center justify-center">
                         <p className="text-white text-lg md:text-6xl text-center leading-snug font-semibold">Schedule</p>
-                        <div className="bg-[#A0000040] flex flex-row justify-between gap-8 md:gap-16 w-full">
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">12:00pm - 1:00pm</p>
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Check-In / Pre-Contest</p>
-                        </div>
-                        <div className="bg-[#B0000080] flex flex-row justify-between items-center gap-8 w-full">
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">1:00pm - 6:00pm</p>
-                            <p className="text-white text-md md:text-5xl text-center leading-none font-semibold">Contest</p>
-                        </div>
-                        <div className="bg-[#A0000040] flex flex-row justify-between gap-8 w-full">
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:00pm - 6:15pm</p>
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Pizza / Break</p>
-                        </div>
-                        <div className="bg-[#B0000080] flex flex-row justify-between gap-8 w-full">
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:15pm - 6:30pm</p>
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Prizes</p>
-                        </div>
-                        <div className="bg-[#A0000040] flex flex-row justify-between gap-8 w-full">
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:30pm - 7:00pm</p>
-                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Problem Solutions</p>
+                        <div className="flex flex-col w-full group">
+                            <div className="transition-all border-white bg-[#A0000040] hover:bg-[#A0444480] group-hover:opacity-50 hover:!opacity-100 flex flex-row justify-between gap-8 md:gap-16 w-full">
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">12:00pm - 1:00pm</p>
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Check-In / Pre-Contest</p>
+                            </div>
+                            <div className="transition-all bg-[#B0000080] hover:bg-[#B0444480] group-hover:opacity-50 hover:!opacity-100 flex flex-row justify-between items-center gap-8 w-full">
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">1:00pm - 6:00pm</p>
+                                <p className="text-white text-md md:text-5xl text-center leading-none font-semibold">Contest</p>
+                            </div>
+                            <div className="transition-all bg-[#A0000040] hover:bg-[#A0444480] group-hover:opacity-50 hover:!opacity-100 flex flex-row justify-between gap-8 w-full">
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:00pm - 6:15pm</p>
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Pizza / Break</p>
+                            </div>
+                            <div className="transition-all bg-[#B0000080] hover:bg-[#A0444480] group-hover:opacity-50 hover:!opacity-100 flex flex-row justify-between gap-8 w-full">
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:15pm - 6:30pm</p>
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Prizes</p>
+                            </div>
+                            <div className="transition-all bg-[#A0000040] hover:bg-[#A0444480] group-hover:opacity-50 hover:!opacity-100 flex flex-row justify-between gap-8 w-full">
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:30pm - 7:00pm</p>
+                                <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Problem Solutions</p>
+                            </div>
                         </div>
                     </div>
                 </div>
