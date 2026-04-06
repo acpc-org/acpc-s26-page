@@ -106,26 +106,29 @@ export default function Home() {
                 <Image src={"/nether 1.svg"} className="w-[48%] h-auto relative z-10" alt={"Cave"} width={600} height={600}></Image>
                 
                 {/* The text content starts exactly halfway across the image */}
-                <div className="absolute right-[10%] flex items-center justify-center z-20 bg-[#50000080] backdrop-blur-sm">
+                <div className="absolute right-[10%] flex items-center justify-center z-20 bg-[#90000030] backdrop-blur-xs">
                     <div className="flex flex-col items-center justify-center">
-                        <p className="text-white text-lg md:text-4xl text-center leading-snug font-semibold">Schedule</p>
-                        <ul className="">
-                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
-                                Over <span className="text-green-500 font-bold">$2,000</span> in prizes
-                            </li>
-                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
-                                Problems for absolute beginners & seasoned experts
-                            </li>
-                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
-                                40+ programming languages allowed
-                            </li>
-                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
-                                Open-internet (content must be published before contest start)
-                            </li>
-                            <li className="text-white text-xs md:text-lg text-center leading-none font-semibold mt-1 md:mt-2">
-                                Lots of free pizza & snacks
-                            </li>
-                        </ul>
+                        <p className="text-white text-lg md:text-6xl text-center leading-snug font-semibold">Schedule</p>
+                        <div className="bg-[#A0000040] flex flex-row justify-between gap-8 md:gap-16 w-full">
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">12:00pm - 1:00pm</p>
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Check-In / Pre-Contest</p>
+                        </div>
+                        <div className="bg-[#B0000080] flex flex-row justify-between gap-8 w-full">
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">1:00pm - 6:00pm</p>
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Contest</p>
+                        </div>
+                        <div className="bg-[#A0000040] flex flex-row justify-between gap-8 w-full">
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:00pm - 6:15pm</p>
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Pizza / Break</p>
+                        </div>
+                        <div className="bg-[#B0000080] flex flex-row justify-between gap-8 w-full">
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:15pm - 6:30pm</p>
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Prizes</p>
+                        </div>
+                        <div className="bg-[#A0000040] flex flex-row justify-between gap-8 w-full">
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">6:30pm - 7:00pm</p>
+                            <p className="text-white text-xs md:text-2xl text-center leading-none font-semibold">Problem Solutions</p>
+                        </div>
                     </div>
                 </div>
             </div>
