@@ -172,9 +172,9 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <Image src={"/nether 2.svg"} className="w-[70%] h-auto relative z-10" alt={"Nether"} width={600} height={600}></Image>
+            <Image src={"/nether 2.svg"} className="w-[80%] h-auto relative z-10" alt={"Nether"} width={600} height={600}></Image>
             <div className="w-screen min-h-[500] bg-orange-500 mt-[-20%] flex flex-row justify-end">
-                <div className="absolute bg-orange-500 w-[10%] h-[110%] md:h-[150%] lg:h-[180%] mt-[-100%] z-0  mr-10"></div>
+                <div className="absolute bg-orange-500 w-[10%] h-[110%] md:h-[150%] lg:h-[180%] mt-[-101%] z-0 mr-4 md:mr-10"></div>
             </div>
         </div>
     </div>
