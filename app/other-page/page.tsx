@@ -110,16 +110,16 @@ export default function Home() {
                 <Image src={"/cave 2.svg"} className="max-w-[48%] h-auto" alt={"Cave"} width={600} height={600}></Image>
             </div>
         </div>
-        <div className="relative w-full overflow-hidden flex items-start justify-center">
-            <Image src={"/screen 4.svg"} className="w-full h-auto object-cover" alt={"Nether background"} width={1200} height={1200}></Image>
+        <div className="relative w-full overflow-hidden flex items-start justify-center bg-[#390C0C]">
+            <Image src={"/screen 4 transparent.svg"} className="w-full h-auto object-cover z-10" alt={"Nether background"} width={1200} height={1200}></Image>
         </div>
         <div className="bg-[#390C0C] flex flex-col mt-[-64]">
             <div className="relative ml-8 mr-8 flex flex-row align-top justify-start">
                 {/* The image takes up 48% of the width */}
-                <Image src={"/nether 1.svg"} className="w-[48%] h-auto relative z-10" alt={"Cave"} width={600} height={600}></Image>
+                <Image src={"/nether 1.svg"} className="w-[48%] h-auto relative" alt={"Nether"} width={600} height={600}></Image>
                 
                 {/* The text content starts exactly halfway across the image */}
-                <div className="absolute right-[10%] flex items-center justify-center z-20 bg-[#90000030] backdrop-blur-xs">
+                <div className="absolute right-[12%] flex items-center justify-center z-30 bg-[#90000030] backdrop-blur-xs">
                     <div className="flex flex-col items-center justify-center">
                         <p className="text-white text-lg md:text-6xl text-center leading-snug font-semibold">Schedule</p>
                         <div className="flex flex-col w-full group gap-[3] md:gap-[8]">
@@ -171,6 +171,10 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+            </div>
+            <Image src={"/nether 2.svg"} className="w-[70%] h-auto relative z-10" alt={"Nether"} width={600} height={600}></Image>
+            <div className="w-screen min-h-[500] bg-orange-500 mt-[-20%] flex flex-row justify-end">
+                <div className="absolute bg-orange-500 w-[10%] h-[110%] md:h-[150%] lg:h-[180%] mt-[-100%] z-0  mr-10"></div>
             </div>
         </div>
     </div>
