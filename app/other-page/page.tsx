@@ -9,22 +9,22 @@ const anybody = Anybody({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 font-sans">
+    <div className="flex flex-col font-sans">
         <div className="md:hidden bg-red-600">
             <p className="text-white">Heads up, this experience will probably not display correctly on mobile devices.</p>
         </div>
-        <div className="relative">
+        <div className="relative w-full min-h-screen overflow-hidden">
             {/* For centered item, pass in className = "absolute gap-10 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2" */}
-            <Image src={"/acpc s26 splash.svg"} className="w-full" alt={"ACPC Spring 2026"} width={1200} height={1200}></Image>
+            <Image src={"/acpc s26 splash.svg"} className="absolute inset-0 w-full h-full object-cover object-center -z-10" alt={"ACPC Spring 2026"} width={1200} height={1200}></Image>
             <div className="absolute top-[30%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2">
                 <div className="flex flex-row gap-2 md:gap-10 ">
                     <div className="flex flex-col">
-                        <p className={`${minecraft.className} text-3xl md:text-6xl text-white`}>20</p>
-                        <p className={`${minecraft.className} text-3xl md:text-6xl text-white`}>26</p>
+                        <p className={`${minecraft.className} text-4xl md:text-6xl text-white`}>20</p>
+                        <p className={`${minecraft.className} text-4xl md:text-6xl text-white`}>26</p>
                     </div>
                     <div className="flex flex-col">
-                        <p className={`${minecraftbold.className} text-3xl md:text-6xl text-white`}>SPRING</p>
-                        <p className={`${minecraftbold.className} text-3xl md:text-6xl text-white`}>CONTEST</p>
+                        <p className={`${minecraftbold.className} text-4xl md:text-6xl text-white`}>SPRING</p>
+                        <p className={`${minecraftbold.className} text-4xl md:text-6xl text-white`}>CONTEST</p>
                     </div>
                 </div>
 
@@ -45,6 +45,40 @@ export default function Home() {
             </div>
 
         </div>
+
+        <div className="relative w-full overflow-hidden flex items-center justify-center">
+            {/* For centered item, pass in className = "absolute gap-10 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2" */}
+            <Image src={"/screen 2.svg"} className="w-full h-auto object-cover" alt={"ACPC Spring 2026"} width={1200} height={1200}></Image>
+            <div className="absolute top-[30%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2">
+                <div className="flex flex-row gap-2 md:gap-10 ">
+                    <div className="flex flex-col">
+                        <p className={`${minecraft.className} text-4xl md:text-6xl text-white`}>20</p>
+                        <p className={`${minecraft.className} text-4xl md:text-6xl text-white`}>26</p>
+                    </div>
+                    <div className="flex flex-col">
+                        <p className={`${minecraftbold.className} text-4xl md:text-6xl text-white`}>SPRING</p>
+                        <p className={`${minecraftbold.className} text-4xl md:text-6xl text-white`}>CONTEST</p>
+                    </div>
+                </div>
+
+                <div className="flex flex-row gap-3">
+                    <div className="flex flex-row gap-1">
+                        <Image src="/clock-small-flat.svg" alt="Clock icon" width={24} height={24}/>
+                        <p className={`${anybody.className} text-black font-bold pt-1 text-sm md:text-xl`}>april 19th</p>
+                    </div>
+                    <div className="flex flex-row gap-1">
+                        <Image src="/heart w border.svg" alt="Heart icon" width={24} height={24}/>
+                        <p className={`${anybody.className} text-black font-bold pt-1 text-sm md:text-xl`}>petr 118</p>
+                    </div>
+                    <div className="flex flex-row gap-1">
+                        <Image src="/hunger.svg" alt="Hunger icon" width={24} height={24}/>
+                        <p className={`${anybody.className} text-black font-bold pt-1 text-sm md:text-xl`}>food + prizes</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
     </div>
   );
 }
