@@ -27,6 +27,7 @@ export default function Home() {
             <p className="text-white">Heads up, this experience will probably not display correctly on mobile devices.</p>
         </div>
         <div className="relative w-full min-h-screen overflow-hidden">
+            {/* Top of "Home" section */}
             {/* For centered item, pass in className = "absolute gap-10 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2" */}
             <Image src={"/acpc s26 splash.svg"} className="absolute inset-0 w-full h-full object-cover object-center -z-10" alt={"ACPC Spring 2026"} width={1200} height={1200}></Image>
             <div className="absolute top-[30%] left-[50%] -translate-x-1/2 -translate-y-1/2 flex flex-col gap-2">
@@ -64,6 +65,7 @@ export default function Home() {
             <Image src={"/screen 2.svg"} className="w-full h-auto object-cover" alt={"Cave background"} width={1200} height={1200}></Image>
         </div>
         <div className="bg-[#3C3B3B] flex flex-col">
+            {/* Top of "About" section */}
             <div className="flex flex-row items-center justify-between ml-8 mr-8">
                 <Image src={"/cave 1.svg"} className="max-w-[48%] h-auto" alt={"Cave"} width={600} height={600}></Image>
                 <div className="relative w-full max-w-[48%] flex items-center justify-center">
@@ -115,6 +117,7 @@ export default function Home() {
             <div className="absolute bg-orange-500 w-[10%] top-0 bottom-[-200px] right-4 md:right-10"></div>
         </div>
         <div className="bg-[#390C0C] flex flex-col mt-[-64] relative">
+            {/* Top of "Schedule" section */}
             <div className="absolute bg-orange-500 w-[10%] top-0 bottom-0 right-4 md:right-10"></div>
             <div className="relative ml-8 mr-8 flex flex-row align-top justify-start z-30">
                 {/* The image takes up 48% of the width */}
@@ -175,6 +178,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="relative w-[80%] z-20">
+                {/* Top of "Prizes" section */}
                 <Image src={"/nether 2.svg"} className="w-full h-auto" alt={"Nether"} width={600} height={600}></Image>
                 <div className="absolute inset-0 flex items-center justify-center">
                     <p className="text-white text-lg md:text-4xl text-center font-semibold">Prize details to be revealed later</p>

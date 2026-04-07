@@ -12,7 +12,7 @@ export default function Home() {
             </div>
             <div className="w-fit p-2 mx-2 mb-2 rounded-lg flex flex-col">
                 <p className="uppercase font-semibold text-sm opacity-60 mb-[-4]">Contest starts in:</p>
-                <p className="text-lg font-semibold"><Timer date={new Date("2026-04-19T13:00:00-05:00")} /></p>
+                <p suppressHydrationWarning className="text-lg font-semibold"><Timer date={new Date("2026-04-19T13:00:00-05:00")} /></p>
             </div>
         </div>
 

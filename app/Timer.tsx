@@ -1,35 +1,48 @@
 "use client";
 
-import Countdown, { CountdownRenderProps } from "react-countdown";
 import { useState, useEffect } from "react";
 
-const renderer = ({ days, hours, minutes, seconds, completed }: CountdownRenderProps) => {
-  if (completed) {
-    return <span>00:00:00</span>;
+export default function Timer({ date }: { date: Date | number | string }) {
+  const [now, setNow] = useState(() => Date.now());
+
+  useEffect(() => {
+    const update = () => setNow(Date.now());
+    
+    update(); // Sync immediately on mount
+    
+    const interval = setInterval(update, 1000);
+
+    // Update when tab comes back into focus or visibility changes
+    // This resolves the issue where the timer freezes after navigating away and back
+    window.addEventListener("focus", update);
+    document.addEventListener("visibilitychange", update);
+
+    return () => {
+      clearInterval(interval);
+      window.removeEventListener("focus", update);
+      document.removeEventListener("visibilitychange", update);
+    };
+  }, []);
+
+  const target = new Date(date).getTime();
+  const diff = target - now;
+
+  if (diff <= 0) {
+    return <span suppressHydrationWarning>Complete</span>;
   }
+
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((diff / 1000 / 60) % 60);
+  const seconds = Math.floor((diff / 1000) % 60);
 
   const h = String(hours).padStart(2, "0");
   const m = String(minutes).padStart(2, "0");
   const s = String(seconds).padStart(2, "0");
 
   if (days >= 1) {
-    return <span>{days}d {h}:{m}:{s}</span>;
+    return <span suppressHydrationWarning>{days}d {h}:{m}:{s}</span>;
   } else {
-    return <span>{h}:{m}:{s}</span>;
+    return <span suppressHydrationWarning>{h}:{m}:{s}</span>;
   }
-};
-
-export default function Timer({ date }: { date: Date | number | string }) {
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  // Return a placeholder or empty span during SSR to avoid hydration mismatch
-  if (!mounted) {
-    return <span>--:--:--</span>;
-  }
-
-  return <Countdown date={date} renderer={renderer} />;
 }
