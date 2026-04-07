@@ -187,7 +187,7 @@ export default function Home() {
                 <div className="w-screen h-[175] bg-orange-500 mt-[-20%] flex flex-row justify-end relative">
                 </div>
                 <div className="w-screen bg-orange-500 pb-20">
-                    <p className="text-center text-white text-5xl font-semibold mb-4">Sponsors</p>
+                    <p className="text-center text-white text-5xl font-semibold mb-4 md:mt-16">Sponsors</p>
                     <div className="flex flex-row justify-center items-center mt-10 z-20 px-4 w-full max-w-4xl mx-auto space-x-2 md:space-x-8">
                         <a href="https://www.hudsonrivertrading.com/" className="opacity-80 active:opacity-50 hover:opacity-100 flex-1 flex justify-center px-1 min-w-0">
                             <Image className="z-30 w-full h-auto max-w-[200px] object-contain" src="/HRT_Logo.svg" alt="HRT" height={200} width={200}/>
