@@ -23,9 +23,9 @@ export default function Home() {
 
     return (
         <div className="flex flex-col font-sans">
-            <div className="md:hidden bg-red-600">
+            {/*<div className="md:hidden bg-red-600">
                 <p className="text-white">Heads up, this experience will probably not display correctly on mobile devices.</p>
-            </div>
+            </div>*/}
             <div id="home" className="relative w-full min-h-screen overflow-hidden">
                 {/* Top of "Home" section */}
                 {/* For centered item, pass in className = "absolute gap-10 top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2" */}
