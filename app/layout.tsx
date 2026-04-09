@@ -39,7 +39,7 @@ export default function RootLayout({
           <a href="#schedule" className="text-md transition-all opacity-70 active:opacity-50 hover:opacity-100">Schedule</a>
           <a href="#prizes" className="text-md transition-all opacity-70 active:opacity-50 hover:opacity-100">Prizes</a>
           <div className="border-1 rounded-md overflow-hidden flex flex-row items-stretch">
-            <p suppressHydrationWarning className="text-md ml-1 mr-1 font-semibold flex items-center whitespace-nowrap"><Timer date={new Date("2026-04-19T13:00:00-05:00")} /></p>
+            <p suppressHydrationWarning className="text-md ml-1 mr-1 font-semibold flex items-center whitespace-nowrap"><Timer date={"2026-04-19T13:00:00-05:00"} /></p>
             <a href="https://tx.ag/uva2aoc" className="flex items-center px-2 transition-all text-md p-1 text-white font-semibold bg-blue-600 hover:bg-blue-500 active:bg-blue-700">Register</a>
           </div>
 
@@ -55,7 +55,7 @@ export default function RootLayout({
             <a href="#prizes" className="text-sm transition-all opacity-70 active:opacity-50 hover:opacity-100">Prizes</a>
           </div>
           <div className="border-1 rounded-md overflow-hidden flex flex-row items-stretch">
-            <p suppressHydrationWarning className="text-xs ml-1 mr-1 font-semibold flex items-center whitespace-nowrap"><Timer date={new Date("2026-04-19T13:00:00-05:00")} /></p>
+            <p suppressHydrationWarning className="text-xs ml-1 mr-1 font-semibold flex items-center whitespace-nowrap"><Timer date={"2026-04-19T13:00:00-05:00"} /></p>
             <a href="https://tx.ag/uva2aoc" className="flex items-center px-2 transition-all text-sm p-1 text-white font-semibold bg-blue-600 hover:bg-blue-500 active:bg-blue-700">Register</a>
           </div>
 
